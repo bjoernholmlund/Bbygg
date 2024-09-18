@@ -6,49 +6,63 @@
     <meta name="description" content="Construction website">
     <meta name="keywords" content="construction, building, renovation, design">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Holmlund Contracting</title>
 </head>
 <body>
-    <!--Header/image/-->
-<header>
-    <a href="index.html"></a>
-    <h1 id="logo-bb">My Construction Website</h1>
-    <!--Menu List-->
-    <nav >
+    <!--Header/with image-->
+    <a href="index.html">
+    <div id="header"></div>
+    </a>
+    
+    <h1 id="logo-bb"></h1>
+     <!--Menu List-->
+    <nav>
       <ul id="menu">
-         <li><a href="contact.html">Contact</a></li>
-         <li><a href="services.html">Services</a></li>
-         <li><a href="work-with-us.html">Work With Us</a></li>
-         <li> <a href="index.html" class="active">About Us</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a>
+              <ul class="dropdown">
+                <li><a href="1">Rivning</a></li>
+                <li><a href="2">Sanering</a></li>
+                <li><a href="3">Demontering</a></li>
+                <li><a href="4">Schaktning</a></li>
+                <li><a href="5">Spontning</a></li>
+                <li><a href="6">Fräsning</a></li>
+             </ul>
+          </li>
+            <li><a href="contact.html">Contact</a></li>
+              <li><a href="index.html" class="active">About Us</a>
+              <ul class="dropdown">
+                <li><a href="1">Fakturainformation</a></li>
+                <li><a href="2">Hållbarhet</a></li>
+                <li><a href="work-with-us.html">Work With Us</a></li>
+                <li><a href="3">Become our partner</a></li>
+            </ul>
+           
+         </li> 
       </ul>
     </nav>
-    </header>
-    <!--image/txt-->
+    
+     <!--image/txt-->
     <section id="bjorn-building">
       <div id="bb-image"></div>
-
-    </section>  
-   
+    </section> 
+     
+    <!--footer/social networks-->
     <footer>
+      <h3>Follow us on social media</h3>
       <ul class="social-networks">
           <li>
               <a href="https://facebook.com" target="_blank" rel="noopener"
                   aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
           </li>
-          <li>
-              <a href="https://twitter.com" target="_blank" rel="noopener"
-                  aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
-          </li>
-          <li>
-              <a href="https://youtube.com" target="_blank" rel="noopener"
-                  aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
-          </li>
+
           <li>
               <a href="https://instagram.com" target="_blank" rel="noopener"
                   aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
           </li>
       </ul>
     </footer>
-    
+     
+    <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>   
 </body>
 </html>

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,38 +6,210 @@
 }
 
 body {
+    font-family: Roboto, sans-serif;
+    color: #3a3a3a;
+}
+/* headings and menu bar */
+
+h1, h2, h3 {
+    text-align: center;
     font-family: Lato, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: rgb(100, 100, 100);
 }
 
-header {
-    background-color: #333;
-    padding: 10px 20px;
+#header {
+    background: url('../images/Holmlund\ contracting.png');
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: left;
+
 }
+
+/*menu list*/
 
 #menu {
+    display: flex;
+    justify-content: center;
     font-size: 110%;
     letter-spacing: 4px;
+    padding: 0;
+    margin: 0;
 }
 
-#logo-bb{
-    float: left;
-    font-size: 280%;
-    margin-left: 30px;
+  #menu ul, #menu li{
+      margin: 0;
+      padding: 0;
+  }
+
+  #menu ul {
+    list-style: none;
+    width: 100%;
+  }
+
+  #menu li {
+    position: relative;
+    width: auto;
+    list-style-type: none;
+  }
+
+  #menu a {
+    color: grey;
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'roboto', sans-serif;
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    
+  }
+
+
+  /*Dropdown*/
+  
+#menu li:hover a{
+    color: black;
+  }
+
+  .dropdown {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  li:hover ul.dropdown {
+    opacity: 1;
+    top: 35px;
+    visibility: visible;
+  }
+
+  .dropdown {
+    float: none;
+    width: 100%;
+  }
+
+  ul li ul.dropdown{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    width: 160px; /* Set a fixed width for the dropdown */
+    /*-----------*/
+    top: 100%;
+    left: 0%; /* Ensures the submenu appears to the right of its parent */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
+
+/* Show the dropdown when hovering over the parent */
+ul li:hover ul.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+/* Dropdown items */
+ul li ul.dropdown li {
+  display: flex;
+  padding: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Highlight one item at a time on hover */
+ul li ul.dropdown li:hover {
+  background-color: #f0f0f0; /* Change this to the highlight color */
+}
+
+
+  /*second dropdown*/
+  .dropdown-second {
+    left: 0;
+    opacity: 0;
+    position: center;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+  }
+
+
+  li:hover ul.dropdown-second {
+        opacity: 1;
+        top: 80px;
+        visibility: visible;
+  }
+
+  .dropdown-second {
+    float: none;
+    width: 100%;
+  }
+
+  ul li ul.dropdown li ul.dropdown-second {
+    display: block;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    width: 160px; /* Set a fixed width for the dropdown */
+    /*-----------*/
+    top: 0;
+    left: 100%; /* Ensures the submenu appears to the right of its parent */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+/* Show the dropdown when hovering over the parent */
+ul li:hover ul.dropdown-second {
+  display: block;
+  flex-direction: column;
+  top: 100%;
+
+}
+
+/* Dropdown items */
+ul li ul.dropdown-second li {
+  padding: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Highlight one item at a time on hover */
+ul li ul.dropdown-second li:hover {
+  background-color: #f0f0f0; /* Change this to the highlight color */
+}
+
+
+/*dropdown menu*/
+
 
 #logo-bb, menu {
     line-height: 75px;
+   
 }
 
-#menu li {
-    float: right;
-    list-style-type: none;
-    margin-right: 30px;
-}
+/*bjorn-building-image*/
 
-menu a {
-    text-decoration: none;
-    color: inherit;
+#logo-bb{
+   
+    font-size: 280%;
+    margin-left: 30px;
+    line-height: 75px;
 }
 
 #bjorn-building {
@@ -46,5 +217,30 @@ menu a {
 }
 
 #bb-image {
+height: 400px;
+width: 50%;
+text-align: center;
+}
+
+
+footer{
+    height: 150px;
+}
+
+.social-networks{
+    text-align: center;
 
 }
+
+.social-networks li{
+    display: inline;
+}
+
+.social-networks i{
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+
