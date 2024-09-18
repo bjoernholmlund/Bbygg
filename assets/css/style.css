@@ -8,6 +8,7 @@
 body {
     font-family: Roboto, sans-serif;
     color: #3a3a3a;
+    padding-top: 70px;
 }
 /* headings and menu bar */
 
@@ -25,18 +26,24 @@ h1, h2, h3 {
     height: 150px;
     background-repeat: no-repeat;
     background-position: left;
+    z-index: 5000;
+    position: relative;
+    }
 
-}
-
-/*menu list*/
+/*menu list/nav bar*/
 
 #menu {
+    z-index: 4000;
     display: flex;
     justify-content: center;
     font-size: 110%;
     letter-spacing: 4px;
     padding: 0;
     margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
 }
 
   #menu ul, #menu li{
@@ -62,20 +69,19 @@ h1, h2, h3 {
     font-size: 20px;
     font-family: 'roboto', sans-serif;
     padding: 15px 55px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     transition: all 0.25s ease;
-    
-  }
-
-
-  /*Dropdown*/
+    }
+   
   
-#menu li:hover a{
+  #menu li:hover a{
     color: black;
   }
 
-  .dropdown {
+
+  /*Dropdown on the menu bar/ Service and About us!*/
+   .dropdown {
     left: 0;
     opacity: 0;
     position: absolute;
@@ -96,13 +102,13 @@ h1, h2, h3 {
   }
 
   ul li ul.dropdown{
-    display: flex;
+    
     position: absolute;
     background-color: white;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    z-index: 999;
+    z-index: 500;
     width: 160px; /* Set a fixed width for the dropdown */
     /*-----------*/
     top: 100%;
@@ -121,7 +127,7 @@ ul li:hover ul.dropdown {
   left: 0;
   opacity: 1;
   visibility: visible;
-  
+  z-index: 9999;
 }
 
 /* Dropdown items */
@@ -136,8 +142,7 @@ ul li ul.dropdown li:hover {
   background-color: #f0f0f0; /* Change this to the highlight color */
 }
 
-
-  /*second dropdown*/
+   /*second dropdown*/
   .dropdown-second {
     left: 0;
     opacity: 0;
@@ -147,8 +152,7 @@ ul li ul.dropdown li:hover {
     z-index: 1;
   }
 
-
-  li:hover ul.dropdown-second {
+   li:hover ul.dropdown-second {
         opacity: 1;
         top: 80px;
         visibility: visible;
@@ -212,14 +216,52 @@ ul li ul.dropdown-second li:hover {
     line-height: 75px;
 }
 
+
+/*Video on the homepage*/
+
+#video{
+z-index: 1;
+position: relative;
+min-width: 100%;
+min-height: 100%;
+bottom: 0;
+right: 0;
+margin-top: 100px;
+height: auto;
+margin-top: 100px;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+}
+.inner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/*första delen under videon*/
+.block-section-text-center{
+text-align: center;
+font-size: 30px;
+background-color: #a51f1f;
+}
+
+/*nothing yet*/
 #bjorn-building {
 
 }
 
 #bb-image {
-height: 400px;
-width: 50%;
-text-align: center;
+  height: 400px;
+  width: 50%;
+  text-align: center;
 }
 
 
