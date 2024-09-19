@@ -13,11 +13,11 @@ body {
 /* headings and menu bar */
 
 h1, h2, h3 {
-    text-align: center;
+    text-align: center ;
     font-family: Lato, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: rgb(100, 100, 100);
+    color: rgb(0, 0, 0);
 }
 
 #header {
@@ -44,6 +44,7 @@ h1, h2, h3 {
     left: 0;
     width: 100%;
     position: relative;
+    background-color:  #ececec;
 }
 
   #menu ul, #menu li{
@@ -104,13 +105,12 @@ h1, h2, h3 {
   ul li ul.dropdown{
     
     position: absolute;
-    background-color: white;
+    background-color: transparent;
     list-style-type: none;
     padding: 0;
     margin: 0;
     z-index: 500;
-    width: 160px; /* Set a fixed width for the dropdown */
-    /*-----------*/
+    width: 200px; /* Set a fixed width for the dropdown */
     top: 100%;
     left: 0%; /* Ensures the submenu appears to the right of its parent */
     opacity: 0;
@@ -133,13 +133,18 @@ ul li:hover ul.dropdown {
 /* Dropdown items */
 ul li ul.dropdown li {
   display: flex;
-  padding: 10px;
+  padding: 10px ;
+  width: 100%;
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Highlight one item at a time on hover */
 ul li ul.dropdown li:hover {
-  background-color: #f0f0f0; /* Change this to the highlight color */
+  background-color: #f0f0f0;
+  /*här har jag gjort ngt*/
+  transition: opacity 0.3s ease;
+  opacity: 0.7; /* Change this to the highlight color */
+ 
 }
 
    /*second dropdown*/
@@ -223,7 +228,7 @@ ul li ul.dropdown-second li:hover {
 z-index: 1;
 position: relative;
 min-width: 100%;
-min-height: 100%;
+min-height: 75%;
 bottom: 0;
 right: 0;
 margin-top: 100px;
@@ -250,8 +255,71 @@ margin-top: 100px;
 .block-section-text-center{
 text-align: center;
 font-size: 30px;
-background-color: rgb(129, 194, 255);
+background-color: #ececec;
+width: 100%;
+height: 400px;
 }
+
+/*services that we provides with header*/
+.block-header{
+width: 100%;
+height: 200px;
+text-align: left;
+font-size: 2rem;
+background-color: #f1f1f1;
+font-weight: bold;
+padding-left: 20px;
+line-height: 200px;
+}
+
+#cover{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  margin-top: 50px auto;
+  justify-items: center;
+  height: 800px;
+  background-color: #f1f1f1;
+}
+ 
+#cover-text h2{
+  text-align: left !important;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-left: 20px;
+  margin: 0;
+
+}
+.box, .box1, .box2, .box3, .box4, .box5 {
+ margin: auto 5px;
+  width: 400px;
+  height: 400px;
+flex: 1;
+}
+
+
+img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.box a img, .box1 a img, .box2 a img, .box3 a img, .box4 a img, .box5 a img      {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.box a:hover img, .box1 a:hover img, .box2 a:hover img, .box3 a:hover img, .box4 a:hover img, .box5 a:hover img      {
+  opacity: 0.7;
+}
+
+.box p{
+  text-align: center;
+  margin-top: 10px;
+}
+
 
 /*nothing yet*/
 #bjorn-building {
@@ -266,7 +334,7 @@ background-color: rgb(129, 194, 255);
 
 
 footer{
-    height: 150px;
+    height: 50px;
 }
 
 .social-networks{
