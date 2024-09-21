@@ -21,15 +21,25 @@ h1, h2, h3 {
 }
 
 #header {
-    background: url('../images/Holmlund\ contracting.png');
-    width: 100%;
-    height: 150px;
-    background-repeat: no-repeat;
-    background-position: left;
-    z-index: 5000;
-    position: relative;
-    }
+  width: 100%;
+  height: 150px;
+  position: relative;
+  z-index: 5000;
+}
 
+#image-header {
+  width: 500px;  /* Adjust the width to match the desired size of the logo */
+  height: 150px;
+  float: left; /* Keeps the image on the left */
+}
+
+#image-header a {
+  display: block;  /* Ensures the anchor tag behaves as a block element */
+  width: 100%;
+  height: 100%;
+  background: url('../images/Holmlund contracting.png') no-repeat left;
+  background-size: cover;  /* Makes the image fill the container while maintaining aspect ratio */
+}
 /*menu list/nav bar*/
 
 #menu {
@@ -64,7 +74,7 @@ h1, h2, h3 {
   }
 
   #menu a {
-    color: grey;
+    color: rgb(0, 0, 0);
     display: flex;
     font-weight: 400;
     font-size: 20px;
@@ -215,7 +225,7 @@ ul li ul.dropdown-second li:hover {
 /*bjorn-building-image*/
 
 #logo-bb{
-   
+   text-align: center;
     font-size: 280%;
     margin-left: 30px;
     line-height: 75px;
@@ -255,7 +265,7 @@ margin-top: 100px;
 .block-section-text-center{
 text-align: center;
 font-size: 30px;
-background-color: #ececec;
+background-color: #f1f1f1;
 width: 100%;
 height: 400px;
 }
@@ -271,6 +281,44 @@ font-weight: bold;
 padding-left: 20px;
 line-height: 200px;
 }
+
+.block-header-img {
+  background: url('../images/excavator-143432_1920.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the container without distortion */
+  width: 100%;
+  height: 500px; /* Adjusts the height to make the image larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.block-header-img h2 {
+  font-size: 50px;  /* Makes the text significantly bigger */
+  color: rgb(0, 0, 0);     /* Ensures the text stands out against the background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to make the text more readable */
+  margin: 0;
+  padding: 0;
+  
+}
+
+.demolition-header{
+  font-size: 30px;
+  font-weight: 900px !important;
+ text-align: center;
+}
+
+ 
+
+.parent{
+  display: flex;
+}
+
+.child{
+  text-align: center;
+  font-size: 20px;
+}
+
 
 #cover{
   display: grid;
@@ -289,7 +337,6 @@ line-height: 200px;
   font-weight: bold;
   padding-left: 20px;
   margin: 0;
-
 }
 .box, .box1, .box2, .box3, .box4, .box5 {
  margin: auto 5px;
