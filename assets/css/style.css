@@ -11,8 +11,7 @@ body {
     padding-top: 70px;
 }
 /* headings and menu bar */
-text-transform: uppercase;
-text-align: center ;
+
 h1, h2, h3 {
   
     font-family: Lato, sans-serif;
@@ -41,95 +40,93 @@ h1, h2, h3 {
   background: url('../images/Holmlund contracting.png') no-repeat left;
   background-size: cover;  /* Makes the image fill the container while maintaining aspect ratio */
 }
-/*menu list/nav bar*/
+/*MENYGRUND*/
 
 #menu {
-    z-index: 4000;
-    display: flex;
-    justify-content: center;
-    font-size: 110%;
-    letter-spacing: 2px;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: relative;
-    background-color:  #000000;
+  z-index: 4000;
+  display: flex;
+  justify-content: center;
+  font-size: 110%;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: relative;
+  background-color: #000000; /* Svart bakgrund för menyn */
 }
 
-  #menu ul, #menu li{
-      margin: 0;
-      padding: 0;
-  }
-
-  #menu ul {
-    list-style: none;
-    width: 100%;
-  }
-
-  #menu li {
-    position: relative;
-    width: auto;
-    list-style-type: none;
-  }
-
-  #menu a {
-    color: rgb(255, 255, 255);
-    display: flex;
-    font-weight: 400;
-    font-size: 20px;
-    font-family: 'roboto', sans-serif;
-    padding: 15px 55px;
-    text-align: left;
-    text-decoration: none;
-    transition: all 0.25s ease;
-    }
-   
-  
-  #menu li:hover a{
-    color: rgb(255, 255, 255);
-  }
-
-
-  /*Dropdown on the menu bar/ Service and About us!*/
-   .dropdown {
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 35px;
-    visibility: hidden;
-    z-index: 1;
-  }
-
-  li:hover ul.dropdown {
-    opacity: 1;
-    top: 35px;
-    visibility: visible;
-  }
-
-  .dropdown {
-    float: none;
-    width: 100%;
-  }
-
-  ul li ul.dropdown{
-    
-    position: absolute;
-    background-color: transparent;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    z-index: 500;
-    width: 200px; /* Set a fixed width for the dropdown */
-    top: 100%;
-    left: 0%; /* Ensures the submenu appears to the right of its parent */
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
+#menu ul, #menu li {
+  margin: 0;
+  padding: 0;
 }
 
-/* Show the dropdown when hovering over the parent */
+#menu ul {
+  list-style: none;
+  width: 100%;
+}
+
+#menu li {
+  position: relative;
+  width: auto;
+  list-style-type: none;
+}
+
+#menu a {
+  color: rgb(255, 255, 255); /* Vit text */
+  display: flex;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding: 30px 100px;
+  text-align: right;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  margin-left: 0;
+}
+
+#menu li:hover a {
+  color: rgb(255, 255, 255); /* Behåll vit text vid hover */
+}
+
+/* Dropdown styles */
+.dropdown {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+li:hover ul.dropdown {
+  opacity: 1;
+  top: 35px;
+  visibility: visible;
+}
+
+.dropdown {
+  float: none;
+  width: 100%;
+}
+
+ul li ul.dropdown {
+  position: absolute;
+  background-color: #000000; /* Svart bakgrund för dropdown-menyn */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  z-index: 500;
+  width: 250px; /* Ändra från fast bredd till auto för dynamisk bredd */
+  top: 100%;
+  left: 0%; /* Se till att submenyn visas under huvudmenyn */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Visa dropdown vid hover */
 ul li:hover ul.dropdown {
   display: flex;
   flex-direction: column;
@@ -139,22 +136,36 @@ ul li:hover ul.dropdown {
   opacity: 1;
   visibility: visible;
   z-index: 9999;
+  width: 100%;
 }
 
 /* Dropdown items */
 ul li ul.dropdown li {
   display: flex;
-  padding: 10px ;
+  padding: 10px;
   width: 100%;
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Förhindra att text bryts till nästa rad */
 }
 
-/* Highlight one item at a time on hover */
+/* Hover effect på dropdown item */
 ul li ul.dropdown li:hover {
-  background-color: #000000;
-  /*här har jag gjort ngt*/
+  background-color: #333333; /* Mörkare svart vid hover */
+}
 
- 
+/* Texten i dropdown */
+ul li ul.dropdown li a {
+  color: #ffffff; /* Vit text även i dropdown */
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap; /* Förhindra radbrytning */
+  font-size: 16px; /* Mindre textstorlek för att få plats */
+}
+
+/* Hover effect för texten i dropdown */
+ul li ul.dropdown li:hover a {
+  color: #ffffff; /* Behåll vit text vid hover */
 }
 
    /*second dropdown*/
@@ -516,7 +527,7 @@ summary {
 }
 
 
-.demolition-image h2, .image-services h2, .dismantling-image h2, .excavation-image h2{
+.demolition-image h2, .image-services h2, .dismantling-image h2, .excavation-image h2, .image-contact h2{
   font-size: 50px;  /* Makes the text significantly bigger */
   color: rgb(255, 255, 255);     /* Ensures the text stands out against the background */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to make the text more readable */
@@ -527,7 +538,7 @@ summary {
   
 }
 
-.demolition-image p, .image-services p, .dismantling-image p, .excavation-image p{
+.demolition-image p, .image-services p, .dismantling-image p, .excavation-image p, .image-contact p{
   font-size: 30px;  /* Makes the text significantly bigger */
   color: rgb(255, 255, 255);     /* Ensures the text stands out against the background */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to make the text more readable */
@@ -548,7 +559,7 @@ summary {
 .container-demolition{
   width: 100%;
 }
-
+/*-----------services----------*/
 .container-services{
   width: 100%;
   
@@ -677,6 +688,7 @@ summary {
   width: 387px;
 }
 
+
 .box-excavation-to-contact {
   width: 150px;
   height: 30px;
@@ -694,6 +706,308 @@ summary {
 .box-excavation-to-contact p {
   color: #f0f0f0;
 }
+
+
+.container-services{
+  width: 100%;
+  
+}
+
+.container-excavation {
+  max-width: 900px; /* Limit max width for better readability */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding around the container */
+}
+
+
+/*-------contact----------*/
+.image-contact{
+  background: url('../images/contact-2860030_1280.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the container without distortion */
+  width: 100%;
+  height: 500px; /* Adjusts the height to make the image larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact-under-header{
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 50px;
+  background-color: #f0f0f0;
+}
+.container-contact {
+  display: flex;                 /* Use flexbox for layout */
+  justify-content: space-between; /* Space between left and right columns */
+  padding: 20px;                /* Padding around the container */
+  align-items: flex-start;
+  
+}
+
+/* Styles for the left column containing the main text */
+.contact {
+  flex: 1;                      /* Take up available space */
+  margin-right: 20px;          /* Space between the columns */
+}
+
+/* Styles for the right column containing specialties */
+.contact1 {
+  flex: 1;                      /* Take up available space */
+}
+
+/* Cover text styles */
+#cover-text-contact {
+  margin-bottom: 20px;         /* Margin below the text */
+}
+
+/* Headings in the cover text */
+#cover-text-contact h2 {
+  font-size: 35px;             /* Font size for headings */
+  font-weight: 700px;           /* Make headings bold */
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 250px;
+  line-height: 1.5;
+}
+
+/* Paragraph styles in the cover text */
+#cover-text-contact p {
+  font-size: 16px;             /* Font size for paragraphs */
+  line-height: 10;            /* Spacing between lines */
+  color: #000000;              /* Slightly lighter color for paragraphs */
+}
+
+/* Styles for the specialties section */
+.contact-inner {
+  background-color: #ffffff;    /* White background for specialties */
+  padding: 20px;                /* Padding inside the box */
+
+}
+
+/* Headings in the specialties */
+.contact-inner h2 {
+  font-size: 15px;             /* Font size for specialties heading */
+  font-weight: bold;           /* Make headings bold */
+  color: #000000;              /* Dark color for better readability */
+}
+
+.contact-inner h3{
+  font-size: 15px;             /* Font size for specialties heading */
+  color: #343a40;              /* Dark color for better readability */
+}
+
+/* Paragraph styles in specialties */
+.contact-inner p {
+  font-size: 16px;             /* Font size for paragraphs */
+  line-height: 1.5;            /* Spacing between lines */
+  color: #495057;            /* Slightly lighter color for paragraphs */
+  margin-top: 20px;
+}
+
+/* Style for the contact section */
+.contact-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Section heading */
+.contact-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.contact-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.contact-form label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Input fields */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Select wrapper for custom arrow */
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  appearance: none; /* Hide default dropdown arrow */
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Custom dropdown arrow */
+.select-wrapper::after {
+  content: '▼'; /* Arrow symbol */
+  font-size: 14px;
+  color: #555;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  margin-top: -10px;
+}
+
+/* Focus and hover effect for inputs and dropdown */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="tel"]:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Submit button */
+.contact-form .submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.contact-form .submit-button:hover {
+  background-color: #0056b3;
+}
+ 
+/*work-with-us form-styling*/
+
+/* Style for the form section */
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+/* Style for the form */
+.signup-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Heading */
+.signup-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Label styling */
+.signup-form label {
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input fields styling */
+.signup-form .text-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Textarea styling */
+.signup-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+}
+
+/* File upload input styling */
+.signup-form input[type="file"] {
+  margin-bottom: 20px;
+}
+
+/* Submit button styling */
+.signup-form .join-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+.signup-form .join-button:hover {
+  background-color: #218838;
+}
+
+/* Input hover and focus effect */
+.signup-form .text-input:hover,
+.signup-form .text-input:focus,
+.signup-form textarea:hover,
+.signup-form textarea:focus {
+  border-color: #28a745;
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+}
+/*-------------------------*/
 #cover {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
@@ -705,8 +1019,8 @@ summary {
 }
 #cover-text {
   background-color: #f0f0f0;
-  height: 650px;
 }
+
 #cover-text-services{
   height: 150px;
 }

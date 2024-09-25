@@ -11,12 +11,15 @@
 <body>
     <!--Header/image/-->
 <header>
-    
-    <a href="home.html">
-        <div id="header"></div></a>
-        
-
-    <h1 id="logo-bb">UNDER CONSTRUCTION!</h1>
+       <!--Header-->
+   <section>
+    <header>
+      <div id="header">
+        <div id="image-header">
+          <a href="index.html"></a>
+        </div>
+      <h1 id="logo-bb">UNDER CONSTRUCTION!</h1>
+    </div>
     <!--Menu List-->
     <nav>
       <ul id="menu">
@@ -49,11 +52,72 @@
 </header>
    
     
-    <!--image/txt-->
-    <section id="bjorn-building">
-      <div id="bb-image"></div>
-    
+<section>
+    <div class="contact-under-header"><br>
+      <h2>Vi erbjuder ett brett utbud av tjänsterna som presenteras nedan med modernt tänk, <br>miljö och framförallt kvalité i fokus.</h2><br>
+    </div>
     </section>
+    
+    
+<section>
+  <div class="container-contact">
+    <div class="contact">
+      <div id="cover-text-contact">
+      <h2>Välkommen att skicka in din ansökan <br>till jobb@jent.se.</h2>
+     </div>
+   </div>
+    
+    <div class="contact1">
+      <div class="contact-inner">
+        <h3>Jobba hos Jansson Entreprenad</h3><br>
+     <h2>Till Dig som brinner för entreprenad & hållbarhet och vill vara en del av vårt team:</h2>
+    <p>Hos Jansson Entreprenad i Linköping AB, ser vi bortom konjunkturer och tillfälliga marknadssvängningar. 
+      Vår strävan är ständigt att omge oss med de bästa inom branschen, både när det kommer till kompetens och personlighet. 
+      Vi vet att rätt person kan göra skillnaden, oavsett hur efterfrågan ser ut just nu.
+
+      Därför vill vi uppmana dig: Om du känner att du har det som krävs och önskar vara en del av vårt framstående team, tveka inte. 
+      Skicka in en spontanansökan redan idag. Vi ser alltid fram emot att lära känna nya talanger och potentiella medarbetare.
+      
+      Varmt välkommen att ta steget mot en spännande framtid med Jansson Entreprenad i Linköping AB.</p>
+    
+    </div>
+
+    </div> 
+   </div>
+
+   <section class="form-section">
+    <form class="signup-form" method="POST" action="https://formdump.codeinstitute.net/" enctype="multipart/form-data">
+        <h2>Submit your application here</h2>
+
+        <!-- Förnamn -->
+        <label for="fname">Name</label><br>
+        <input class="text-input" type="text" id="fname" name="first_name" required><br>
+
+
+        <!-- Telefon -->
+        <label for="phone">Phone Number</label><br>
+        <input class="text-input" type="tel" id="phone" name="phone_number" required><br>
+
+        <!-- E-postadress -->
+        <label for="email">Email Address</label><br>
+        <input class="text-input" type="email" id="email" name="email_address" required><br>
+
+        <!-- Meddelande -->
+        <label for="message">Message</label><br>
+        <textarea class="text-input" id="message" name="message" rows="4" required></textarea><br>
+
+        <!-- Ladda upp fil -->
+        <label for="file-upload">Upload CV and cover letter here</label><br>
+        <input type="file" id="file-upload" name="file_upload" accept=".pdf,.doc,.docx,.jpg,.png" required><br>
+
+        <!-- Submit-knapp -->
+        <input class="join-button" type="submit" value="Send the application">
+    </form>
+</section>
+
+
+
+   </section>
    
     <footer>
         <h3>Follow us on social media</h3>
