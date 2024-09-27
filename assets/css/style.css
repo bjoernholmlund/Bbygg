@@ -316,16 +316,8 @@ i.fa-solid.fa-arrow-down {
   color: #000; /* Change the color of the arrow if needed */
 }
 
-.image-services{
-  background: url('../images/our-services-51666_1280.jpg') no-repeat center center;
-  background-size: cover; /* Ensures the image covers the container without distortion */
-  width: 100%;
-  height: 500px; /* Adjusts the height to make the image larger */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: flex-start;
-}
+
+/*----------------DEMOLITION-STYLING!-----------------------------*/
 
 .demolition-image {
   background: url('../images/demolition-139976_1280.jpg') no-repeat center center;
@@ -337,7 +329,12 @@ i.fa-solid.fa-arrow-down {
   justify-content: center;
   align-items: flex-start;
 }
-/*---------------------------------------------*/
+
+.demolition-header{
+  height: 250px;
+  text-align: center;
+  margin-top: 100px;
+}
 
 /* Container for the demolition section */
 .container-demolition {
@@ -398,34 +395,72 @@ i.fa-solid.fa-arrow-down {
 
 /*------------dropdown-list in demolition-----------------*/
 
+/* Container for the FAQ section */
 .questions-container {
   display: flex;
-  justify-content: center; /* This centers the dropdown horizontally */
-  width: 100%; /* Ensures the container takes full width */
-  margin: 0 auto; /* Centers the container */
-  padding-right: 10%; /* Adjust this to move the container slightly to the right */
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center the content horizontally */
+  width: 100%;
+  max-width: 800px;
+  margin: auto; /* Centers the container */
+  padding: 20px 10%; /* Adds padding to the section */
+  background-color: #f9f9f9; /* Light background color for better contrast */
 }
 
-.ordinary-questions h2{
-  display: flex;
-  justify-content: center; /* This centers the dropdown horizontally */
-  width: 100%; /* Ensures the container takes full width */
-  margin: 0 auto; /* Centers the container */
-  padding-right: 13%; /* Adjust this to move the container slightly to the right */
+/* Styling for the section heading */
+.ordinary-questions h2 {
+  font-size: 26px;
+  text-align: center; /* Centers the heading text */
+  font-weight: 600; /* Make the heading slightly bold */
+  margin-bottom: 20px; /* Adds some space between heading and the first question */
 }
 
+/* Styling for each details element (the questions) */
 details {
   width: 80%; /* Set a fixed width for each dropdown */
-  margin-bottom: 10px; /* Adds space between each dropdown */
-  text-align: center; /* Centers the content inside the details */
+  margin-bottom: 15px; /* Adds space between each dropdown */
+  padding: 10px;
+  background-color: #ffffff; /* White background for questions */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition when interacting with details */
+  margin: auto;
 }
 
+/* Hover effect for details */
+details:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+}
+
+/* Summary styling (question title) */
 summary {
-  font-size: 18px; /* Adjust font size for the summary */
+  font-size: 20px; /* Adjust font size for the summary */
+  font-weight: 500;
   cursor: pointer; /* Changes cursor to pointer */
+  padding: 10px;
+  outline: none; /* Remove default outline */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
-/*--------------------------------------------*/
+/* Hover effect for summary */
+summary:hover {
+  color: #6d6d6d; /* Changes text color to blue on hover */
+}
+
+/* Paragraph inside the details (answers) */
+details p {
+  padding: 10px;
+  font-size: 16px;
+  color: #333333; /* Dark text for better readability */
+  line-height: 1.5; /* Adds some space between lines */
+}
+
+/* Optional: Adjust font color for more readability */
+.questions-container {
+  color: #333; /* Dark gray text */
+}
+
+/*-----------------DISMANTLING-STYLING!---------------------------*/
 
 .dismantling-image {
   background: url('../images/dismantling1-2159352_1280.jpg') no-repeat center center;
@@ -438,7 +473,12 @@ summary {
   align-items: flex-start;
 }
 
-/*--------Dismantling styling*/
+.demolition-header{
+  height: 250px;
+  text-align: center;
+  margin-top: auto;
+}
+
 .container-dismantling {
   display: flex; /* Use flexbox for layout */
   justify-content: space-between; /* Space between left and right columns */
@@ -496,38 +536,7 @@ summary {
   color: #495057; /* Slightly lighter color for text */
 }
 
-
-/*----------------*/
-
-.excavation-image{
-  background: url('../images/excavation-3088700_1280.jpg') no-repeat center center;
-  background-size: cover; /* Ensures the image covers the container without distortion */
-  width: 100%;
-  height: 500px; /* Adjusts the height to make the image larger */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.excavation-header h2{
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 1px;
-  margin-top: 50px;
-}
-
-.excavation-header p{
-  text-align: center;
-  font-weight: 500;
-  text-align: center;
-  letter-spacing: 1px;
-  margin-top: 50px;
-}
-
-
-.demolition-image h2, .image-services h2, .dismantling-image h2, .excavation-image h2, .image-contact h2{
+.demolition-image h2, .image-services h2, .dismantling-image h2, .excavation-image h2, .image-contact h2, .image-work-with-us h2, .image-sheet-piling h2, .image-milling h2{
   font-size: 50px;  /* Makes the text significantly bigger */
   color: rgb(255, 255, 255);     /* Ensures the text stands out against the background */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to make the text more readable */
@@ -538,7 +547,7 @@ summary {
   
 }
 
-.demolition-image p, .image-services p, .dismantling-image p, .excavation-image p, .image-contact p{
+.demolition-image p, .image-services p, .dismantling-image p, .excavation-image p, .image-contact p, .image-work-with-us p, .image-sheet-piling p, .image-milling p{
   font-size: 30px;  /* Makes the text significantly bigger */
   color: rgb(255, 255, 255);     /* Ensures the text stands out against the background */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to make the text more readable */
@@ -559,19 +568,28 @@ summary {
 .container-demolition{
   width: 100%;
 }
-/*-----------services----------*/
+
+
+/*
+BEHÖVS TROLIGEN INTE!
 .container-services{
   width: 100%;
   
 }
+*/
+/* ----------SERVICES-STYLING-------------*/
 
-.container-excavation {
-  max-width: 900px; /* Limit max width for better readability */
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Add padding around the container */
+.image-services{
+  background: url('../images/our-services-51666_1280.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the container without distortion */
+  width: 100%;
+  height: 500px; /* Adjusts the height to make the image larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-/* -----------------------*/
 .container-services {
   display: flex;                 /* Use flexbox for layout */
   justify-content: space-between; /* Space between left and right columns */
@@ -633,7 +651,36 @@ summary {
 }
 
 
-/*------------------------*/
+
+/*--------EXCAVATION-STYLING--------*/
+
+.excavation-image{
+  background: url('../images/excavation-3088700_1280.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the container without distortion */
+  width: 100%;
+  height: 500px; /* Adjusts the height to make the image larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.excavation-header h2{
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+
+.excavation-header p{
+  text-align: center;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+
 .excavation {
   display: flex; /* Use flexbox to align items */
   justify-content: space-between; /* Space between items */
@@ -651,7 +698,7 @@ summary {
   width: 250px; /* Fixed width for the second column */
     padding-left: 10px; /* Optional padding for better spacing */
     margin-left: 20px; /* Space between the two sections */
-    margin-top: 0; /* Adjust this to move it higher */
+    margin-top: 145px; /* Adjust this to move it higher */
     position: relative; /* For positioning */
     top: -845px; /* Move it up by this value; adjust as needed */
     right: -450px;
@@ -707,22 +754,17 @@ summary {
   color: #f0f0f0;
 }
 
-
-.container-services{
-  width: 100%;
-  
-}
-
 .container-excavation {
   max-width: 900px; /* Limit max width for better readability */
   margin: 0 auto; /* Center the container */
   padding: 20px; /* Add padding around the container */
+  height: 750px;
 }
 
+/*---------SHEET-PILLING-STYLING!-------------*/
 
-/*-------contact----------*/
-.image-contact{
-  background: url('../images/contact-2860030_1280.jpg') no-repeat center center;
+.image-sheet-piling {
+  background: url('../images/beam-4920150_1280.jpg') no-repeat center center;
   background-size: cover; /* Ensures the image covers the container without distortion */
   width: 100%;
   height: 500px; /* Adjusts the height to make the image larger */
@@ -731,20 +773,112 @@ summary {
   justify-content: center;
   align-items: flex-start;
 }
-.contact-under-header{
-  width: 100%;
-  height: 250px;
-  text-align: center;
-  font-size: 15px;
-  line-height: 50px;
-  background-color: #f0f0f0;
+
+.container-sheet-piling{
+  display: flex;                 /* Use flexbox for layout */
+  justify-content: space-between; /* Space between left and right columns */
+  padding: 20px;                /* Padding around the container */
+  align-items: flex-start;
+  height: 400px;
 }
+
+/* Styles for the left column containing the main text */
+.sheet-piling {
+  flex: 1;                      /* Take up available space */
+  margin-right: 20px;          /* Space between the columns */
+}
+
+/* Styles for the right column containing specialties */
+.sheet-piling1 {
+  flex: 1;                      /* Take up available space */
+}
+
+/* Cover text styles */
+#cover-text-sheet-piling {
+  margin-bottom: 20px;         /* Margin below the text */
+}
+
+/* Headings in the cover text */
+#cover-text-sheet-piling h2 {
+  font-size: 35px;             /* Font size for headings */
+  font-weight: 700px;           /* Make headings bold */
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 150px;
+  line-height: 1.5;
+}
+
+/* Paragraph styles in the cover text */
+#cover-text-sheet-piling p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #495057;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+/* Styles for the specialties section */
+.sheet-piling-inner {
+  background-color: #ffffff;    /* White background for specialties */
+  padding: 20px;                /* Padding inside the box */
+
+}
+
+/* Headings in the specialties */
+.sheet-piling-inner h2 {
+  font-size: 35px;             /* Font size for headings */
+  font-weight: 700px;           /* Make headings bold */
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 250px;
+  line-height: 1.5;
+  margin-left: 100px;           /* Dark color for better readability */
+}
+
+
+/* Paragraph styles in specialties */
+.sheet-piling-inner p {
+  font-size: 14px;             /* Font size for paragraphs */
+  line-height: 1.5;            /* Spacing between lines */
+  color: #495057;            /* Slightly lighter color for paragraphs */
+  margin-top: 20px;
+}
+
+/* Style for the contact section */
+.sheet-piling-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Section heading */
+.sheet-piling-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/*-------CONTACT-STYLING!----------*/
+.image-contact{
+  background: url('../images/contact-2860030_1280.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the container without distortion */
+  width: 100%;
+  height: 450px; /* Adjusts the height to make the image larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .container-contact {
   display: flex;                 /* Use flexbox for layout */
   justify-content: space-between; /* Space between left and right columns */
   padding: 20px;                /* Padding around the container */
   align-items: flex-start;
-  
+  height: 400px;
 }
 
 /* Styles for the left column containing the main text */
@@ -915,7 +1049,28 @@ summary {
   background-color: #0056b3;
 }
  
-/*work-with-us form-styling*/
+/*----------WORK WITH US-STYLING!---------*/
+
+.image-work-with-us{
+  background: url('../images/handshake-4002834_1280.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the container without distortion */
+  width: 100%;
+  height: 450px; /* Adjusts the height to make the image larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.work-whit-us-under-header{
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 50px;
+  background-color: #f0f0f0;
+}
 
 /* Style for the form section */
 .form-section {
@@ -1008,6 +1163,110 @@ summary {
   box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
 }
 /*-------------------------*/
+/*--------------------MILLING-STYLING----------------*/
+
+.image-milling{
+  background: url('../images/asphalt1-2580494_1280.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the container without distortion */
+  width: 100%;
+  height: 450px; /* Adjusts the height to make the image larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container-milling {
+  max-width: 900px; /* Limit max width for better readability */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding around the container */
+  height: 1000px;
+}
+
+.milling-header h2{
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+
+.milling-header p{
+  text-align: center;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+
+.milling {
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Space between items */
+  align-items: flex-start; /* Align items at the top */
+  width: 900px;
+
+}
+
+.milling-first {
+  flex: 1; /* Allow this div to take available space */
+  margin-right: 20px; /* Space between the two columns */
+}
+
+.milling1 {
+  width: 250px; /* Fixed width for the second column */
+    padding-left: 10px; /* Optional padding for better spacing */
+    margin-left: 20px; /* Space between the two sections */
+    margin-top: 145px; /* Adjust this to move it higher */
+    position: relative; /* For positioning */
+    top: -1030px; /* Move it up by this value; adjust as needed */
+    right: -450px;
+}
+
+.milling-inner {
+  
+  padding: 10px; /* Add some padding inside the inner div */
+  text-align: right; /* Align text to the right */
+}
+.milling h2 {
+  font-size: 24px; /* Size of headings */
+  font-weight: 700; /* Bold headings */
+  margin-bottom: 10px; /* Space below headings */
+  color: #343a40; /* Darker color for headings */
+  text-align: left;
+  width: 387px;
+}
+
+.milling1 h2{
+  font-size: 24px; /* Size of headings */
+  font-weight: 700; /* Bold headings */
+  margin-bottom: 10px; /* Space below headings */
+  color: #343a40; /* Darker color for headings */
+  text-align: left;
+  width: 387px;
+}
+
+.milling p {
+  font-size: 15px; /* Font size for paragraphs */
+  line-height: 1.6; /* Better readability */
+  margin-bottom: 15px; /* Space between paragraphs */
+  color: #495057; /* Slightly lighter color for text */
+  width: 387px;
+}
+
+.milling1 p{
+  font-size: 15px; /* Font size for paragraphs */
+  line-height: 1.6; /* Better readability */
+  margin-bottom: 15px; /* Space between paragraphs */
+  color: #495057; /* Slightly lighter color for text */
+  width: 387px;
+  text-align: left;
+}
+
+
+/*---------------------TRANSPORTS-STYLING--------------*/
+
+
+
 #cover {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
@@ -1049,7 +1308,7 @@ img {
 }
 
 .box p {
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
 }
 
