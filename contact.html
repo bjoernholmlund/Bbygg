@@ -6,10 +6,11 @@
     <meta name="description" content="Construction website">
     <meta name="keywords" content="construction, building, renovation, design">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Holmlund Contracting</title>
 </head>
 <body>
-    <!--Header-->
+    
    <header>
     
      <!--Header-->
@@ -17,15 +18,15 @@
       <header>
         <div id="header">
           <div id="image-header">
-            <a href="index.html"></a>
-          </div>
-        <h1 id="logo-bb">UNDER CONSTRUCTION!</h1>
-      </div>
+            <a href="index.html"></a></div>
 
-      
+
     <!--Menu List-->
     
     <nav >
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
       <ul id="menu">
          <li><a href="index.html">Home</a></li>
          <li><a href="services.html">Services</a>
@@ -39,12 +40,8 @@
            </ul>
          </li>
          <li><a href="work-with-us.html">Work with us</a></li>
-          <li> <a href="about-us.html">About us</a>
-            <ul class="dropdown">
-              <li><a href="1">Billing information</a></li>
-              <li><a href="2">Sustainability</a></li>
-              <li><a href="3">Become our partner</a></li>
-              <li><a href="contact.html" class="active">Contact</a></li>
+         <li><a href="contact.html" class="active">Contact</a></li>
+              
             </ul>
           </li>
           
@@ -58,15 +55,11 @@
       </div>
     </section>
 
-
-   <!--BYT UT ALL SVENSK TEXT!!!!!-->
-      
-      
   <section>
     <div class="container-contact">
       <div class="contact">
         <div id="cover-text-contact">
-        <h2>Kontakta oss gärna via kontaktformuläret för snabb service</h2>
+        <h2>Feel free to contact us via the contact form for fast service</h2>
        
        </div>
      </div>
@@ -74,11 +67,10 @@
       <div class="contact1">
         <div class="contact-inner">
       <p>
-        I listan nedan hittar du kontaktpersoner inom olika områden. Kontakta oss gärna för att få mer information om vilka vi är och vad vi gör.
-        
-        Vi bistår gärna med hjälp vid kalkyl i tidigt skede och lämnar gärna priser för att ni som vår beställare kan gå vidare i anbudsprocessen med 
-        de arbeten som ni behöver hjälp med.
-        Vi ser din förfrågan som en möjlighet och är tacksamma för att just du givit oss förtroendet.</p>
+        In the list below you will find contact persons in various areas. Feel free to contact us to get more 
+        information about who we are and what we do. We are happy to assist with calculations at an early 
+        stage and are happy to provide prices so that you, as our client, can proceed in the tender process 
+        with the work you need help with. We see your request as an opportunity and are grateful that you have given us your trust.</p>
       
       </div>
 
@@ -106,9 +98,11 @@
           <div class="select-wrapper">
               <select id="service" name="service" required>
                   <option value="" disabled selected>Select a service</option>
-                  <option value="demolition">Rivning</option>
-                  <option value="decontamination">Sanering</option>
-                  <option value="excavation">Markarbeten</option>
+                  <option value="demolition">Demolition</option>
+                  <option value="decontamination">Dismantling</option>
+                  <option value="excavation">Excavation</option>
+                  <option value="sheet-piling">Sheet-piling</option>
+                  <option value="milling">Milling</option>
                   <option value="transport">Transport</option>
               </select>
           </div>
@@ -147,3 +141,10 @@
 
 <div class="cover-text"></div>
 <div id="cover-text"></div>
+
+
+<nav>
+  <div class="hamburger" onclick="toggleMenu()">
+   <i class="fas fa-bars"></i>
+ </div></nav>
+

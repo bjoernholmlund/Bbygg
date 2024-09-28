@@ -6,6 +6,7 @@
     <meta name="description" content="Construction website">
     <meta name="keywords" content="construction, building, renovation, design">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>A Proffessional company <br>Holmlund Contracting</title>
 </head>
 <body>
@@ -17,13 +18,15 @@
             <div id="image-header">
               <a href="index.html"></a>
             </div>
-          <h1 id="logo-bb">UNDER CONSTRUCTION!</h1>
         </div>
        </section>
     
     <!--Menu List-->
     
-    <nav >
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
       <ul id="menu">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="services.html">Services</a>
@@ -37,12 +40,7 @@
             </ul>
           </li>
           <li><a href="work-with-us.html">Work with us</a></li>
-          <li><a href="about-us.html">About us</a>
-            <ul class="dropdown">
-              <li><a href="1">Billing information</a></li>
-              <li><a href="2">Sustainability</a></li>
-              <li><a href="3">Become our partner</a></li>
-              <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
             </ul>
           </li> 
           
@@ -55,7 +53,6 @@
 
       <section>
         <div class="demolition-image">
-          <p>Holmlund contracting in sweden!</p><br>
          <h2>Demolition</h2>
         </div>
       </section>
@@ -63,7 +60,7 @@
       <!--BYT UT ALL SVENSK TEXT GLÖM INTE DET!-->
         <section>
           <div class="demolition-header"><br>
-             <h2>Vi utför rivningar i hela Sverige. Vi river alla typer av byggnader och <br>konstruktioner oavsett storlek.</h2><br>
+             <h2>We perform demolitions throughout Sweden, dismantling all kinds of buildings and structures, <br>no matter the size.</h2><br>
           </div>
         </section>
 
@@ -72,9 +69,9 @@
             <div class="demolition">
               <div id="cover-text-demolition">
               
-             <p>Jansson Entreprenad är en rivningsfirma som erbjuder skräddarsydda tjänster inom rivning baserade på dina behov och förutsättningar. 
-              Vårt mål är att tillgodose industrin med effektiva och specialiserade rivningstjänster utifrån ett hållbart perspektiv, 
-              då en av de viktigaste aspekterna inom rivning är planering av hur avfallet ska tas hand om.</p>
+             <p>Holmlund Contracting is a demolition firm that provides tailored demolition services based on your specific needs and conditions. 
+              Our mission is to deliver efficient and specialized demolition solutions with a focus on sustainability, recognizing that effective
+               waste management planning is crucial in the demolition process.</p>
             
              </div>
            </div>
@@ -83,18 +80,17 @@
               <div class="demolition-inner">
              
             <p>
-              Vårt rivningsarbete bygger på två olika kvaliteter som genomsyrar hela Jansson Entreprenad som rivningsfirma:
+              Our demolition efforts are based on two fundamental qualities that define Holmlund Contracting as a demolition firm:
 
-              <h2>Kvalitet i “hårdvara”: </h2>
-              Vår kvalitet i “hårdvara” syftar till vår maskinpark som består av noga utvalda moderna maskiner för att kunna tillgodose behoven av 
-              rivningsarbeten och rivningsprojekt av varierande komplexitet och storlek. Vi utför kontinuerligt noggranna kontroller och regelbundet 
-              underhåll av vår maskinpark för att alla maskiner ska hålla högsta kvalitet. <br> <br>
-              <h2>Kvalitet i “mjukvara:</h2>
-              Vår kvalitet i “mjukvara” syftar till Jansson Entreprenad medarbetare och den kompetens och mångåriga erfarenhet vi innehar. Vi investerar 
-              både mycket tid och pengar på utbildning och utveckling för att alla medarbetare alla inom vår organisation ska få möjligheten och utrymmet att 
-              uppnå sina ambitioner.
+              <h2>Quality in "Hardware":</h2>
+              Our "hardware" quality reflects our fleet of meticulously selected modern machinery, designed to effectively meet the 
+              needs of demolition projects of all complexities and sizes. We perform regular inspections and maintenance to ensure that 
+              all equipment maintains the highest quality standards. <br> <br>
+              <h2>Quality in "Software":</h2>
+              Our "software" quality focuses on the dedicated team at Holmlund Contracting, bringing valuable expertise and years of experience. 
+              We invest considerable time and resources in training and professional development, empowering every team member to reach their full potential.
 
-              Det är vårt aktiva arbete med dessa två kvaliteter som gör att vi kan erbjuda dig som kund något utöver det vanliga.
+              It is our proactive dedication to these two qualities that allows us to provide you, our customer, with exceptional service.
             </p>
             
             </div>
@@ -106,7 +102,7 @@
           <!-- Contact box section below -->
           <div class="box-excavation-to-contact">
               <a href="contact.html">
-                  <p>Kontakta oss här</p>
+                  <p>Contact us here</p>
               </a>
           </div>
         </section>  
@@ -118,7 +114,7 @@
           </div> 
            <div>
           <details>
-            <summary>How much would it cost to demolish a house?!</summary><br>
+            <summary>How much would it cost to demolish a house?</summary><br>
               <p>
                 The price of demolishing a house depends entirely on the scope of the work. The size of the house, 
                 availability and time for execution are some of the parameters that affect the price. It is impossible 
