@@ -6,7 +6,7 @@
 }
 
 
-/*--------------------*/
+
 body {
     font-family: Roboto, sans-serif;
     color: #3a3a3a;
@@ -29,7 +29,7 @@ h1, h2, h3 {
 }
 
 #image-header {
-  width: 500px;  /* Adjust the width to match the desired size of the logo */
+  width: 300px;  /* Adjust the width to match the desired size of the logo */
   height: 150px;
   float: left; /* Keeps the image on the left */
 }
@@ -41,7 +41,7 @@ h1, h2, h3 {
   background: url('../images/Holmlund contracting.png') no-repeat left;
   background-size: cover;  /* Makes the image fill the container while maintaining aspect ratio */
 }
-/*MENYGRUND*/
+/*MENU*/
 
 #menu {
   z-index: 4000;
@@ -55,7 +55,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   position: relative;
-  background-color: #000000; /* Svart bakgrund för menyn */
+  background-color: #000000; /* black background for the menu */
 }
 
 #menu ul, #menu li {
@@ -531,19 +531,18 @@ details p {
 /* Styles for the right column containing specialties */
 .services1 {
   flex: 1;                      /* Take up available space */
-  margin-right: 150px;
+  text-align: center;
 }
 
 /* Cover text styles */
 #cover-text-services {
-  margin-bottom: 20px;         /* Margin below the text */
+  margin-bottom: 20px; /* Margin below the text */
 }
 
 /* Headings in the cover text */
 #cover-text-services h2 {
   font-size: 20px;             /* Font size for headings */
   font-weight: 400;           /* Make headings bold */
-  
   margin-top: 30px;
 }
 
@@ -557,8 +556,7 @@ details p {
 /* Styles for the specialties section */
 .services-inner {
   background-color: #ffffff;    /* White background for specialties */
-  padding: 20px;                /* Padding inside the box */
-
+  padding: 10px;                /* Padding inside the box */
 }
 
 /* Headings in the specialties */
@@ -1339,7 +1337,7 @@ footer h3{
     clear: both;
   }
 
-  #cover-text {
+  #cover-text, .services1  {
     padding: 10px;
     text-align: center;
     margin-top: 20px;
