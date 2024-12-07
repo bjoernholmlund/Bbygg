@@ -15,15 +15,14 @@ body {
 
 /* headings and menu bar */
 
-h1, h2, h3 {
-  
-    font-family: Lato, sans-serif;
-    letter-spacing: 4px;
-    color: rgb(0, 0, 0);
+h1, h2, h3 {  
+  font-family: Lato, sans-serif;
+  letter-spacing: 4px;
+  color: rgb(0, 0, 0);
 }
 
 #header {
-  width: 100%;
+  width: 75%;
   height: 150px;
   position: relative;
   z-index: 5000;
@@ -1269,10 +1268,8 @@ footer h3{
     color: #3a3a3a;
 }
 
-/*-----------For tablets and mobiles--------*/
-
- 
- @media screen and (max-width: 1200px) {
+/*-----------For Tablets and Mobiles--------*/
+@media screen and (max-width: 1200px) {
   #header, #logo-bb {
       text-align: center;
   }
@@ -1281,11 +1278,13 @@ footer h3{
       display: flex;
       flex-direction: column;
       margin: 0 auto;
+      padding-left: 0;
   }
 
   .box, .box1, .box2, .box3, .box4, .box5 {
-      width: 45%;
-      margin: 10px auto;
+      width: 100%;
+      margin: 20px 0;
+      clear: both;
   }
 
   #cover-text {
@@ -1293,12 +1292,11 @@ footer h3{
   }
 
   video {
-      width: 90%;
+      width: 100%;
       height: auto;
       margin: 0 auto;
   }
 }
-
 
 @media screen and (max-width: 950px) {
   #menu {
@@ -1307,78 +1305,53 @@ footer h3{
   }
 
   .box, .box1, .box2, .box3, .box4, .box5 {
-      width: 90%;
+    width: 100%;
+    margin-bottom: 20px;
+    clear: both;
   }
 
   #cover-text {
-      padding: 10px;
-  }
-
-  #welcome, .block-header-home {
-      padding: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .block-section-text-center h1, .block-section-text-center h5 {
-      font-size: 1.5em;
-      text-align: center;
+    font-size: 0.5em;
+    text-align: center;
   }
 
   video {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
   }
 }
 
-.hamburger {
-  display: none;
-  font-size: 2em;
-  cursor: pointer;
-  margin: 20px;
-  z-index: 1001; 
-}
-
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
   #menu {
-      display: none; 
-  }
-
-  .hamburger {
-      display: block;
-      font-size: 2em;
-      cursor: pointer;
-      margin: 20px;
-      z-index: 1500;
-  }
-  #menu.show {
-    display: flex; 
     flex-direction: column;
-    position: absolute; 
-    top: 100%; 
-    left: 0;
-    right: 0;
-    background-color: #fff; 
-    z-index: 9999; 
-    padding: 10px; 
-}
-  #cover-text {
-      text-align: center;
+    text-align: center;
   }
 
   .box, .box1, .box2, .box3, .box4, .box5 {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    clear: both;
   }
 
-  .block-section-text-center h1 {
-      font-size: 1.3em;
+  #cover-text {
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
   }
 
-  .block-section-text-center h5 {
-      font-size: 1em;
+  .block-section-text-center h1, .block-section-text-center h5 {
+    font-size: 0.5em;
+    text-align: center;
   }
 
   video {
-      width: 100%;
+    width: 100%;
+    height: auto;
   }
 }
