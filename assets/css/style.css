@@ -235,7 +235,7 @@ align-items: center;
   height: 250px;
   text-align: center;
   font-size: 15px;
-  line-height: 50px;
+  line-height: 40px;
 }
 
 i.fa-solid.fa-arrow-down {
@@ -264,6 +264,7 @@ i.fa-solid.fa-arrow-down {
   height: 250px;
   text-align: center;
   margin-top: 100px;
+  font-size: 20px;
 }
 
 /* Container for the demolition section */
@@ -519,13 +520,6 @@ details p {
   justify-content: space-between; /* Space between left and right columns */
   padding: 20px;                /* Padding around the container */
   align-items: flex-start;
-}
-
-/* Styles for the left column containing the main text */
-.services {
-  flex: 1;                      /* Take up available space */
-  margin-right: 20px;
-  margin-left: 150px;          /* Space between the columns */
 }
 
 /* Styles for the right column containing specialties */
