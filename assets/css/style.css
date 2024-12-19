@@ -220,13 +220,13 @@ height: 400px;
 /*services that we provides with header*/
 .block-header-home {
 width: 100%;
-height: 200px;
+height: 250px;
 text-align: center;
 font-size: 20px;
 background-color: #f0f0f0;
 font-weight: bold;
 padding-left: 20px;
-line-height: 200px;
+line-height: 250px;
 align-items: center;
 }
 
@@ -1188,8 +1188,16 @@ Not done yet :/
 
 */
                
-
-
+#cover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr); 
+  margin: 0 auto; 
+  grid-gap: 50px; 
+}
+/*
 #cover {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -1197,11 +1205,10 @@ Not done yet :/
   width: fit-content; 
   margin: 0 auto; 
   padding: 20px;
- 
-}
+} */
+
 #cover-text {
   background-color: #f0f0f0;
- 
 }
 
 #cover-text-services{
@@ -1209,11 +1216,16 @@ Not done yet :/
 }
 
 .box, .box1, .box2, .box3, .box4, .box5 {
+  width: calc(33.333% - 16px); 
+  text-align: center;
+}
+/*
+.box, .box1, .box2, .box3, .box4, .box5 {
   margin: auto 1px;
   width: 250px;
   height: 250px;
   display: block; 
-}
+}*/
 
 img {
   width: 100%;
@@ -1238,15 +1250,15 @@ img {
 
 
 footer{
-  
     line-height: 150px;
 }
+
 footer h3{
   text-align: center;
 }
+
 .social-networks{
     text-align: center;
-
 }
 
 .social-networks li{
@@ -1319,12 +1331,18 @@ footer h3{
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   #menu {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
+    justify-content: space-evenly;
   }
-
+  
+   #menu a {
+    padding: 10px 20px; /* Minska padding */
+    font-size: 10px; /* Minska textstorlek */
+  } 
+  
   .box, .box1, .box2, .box3, .box4, .box5 {
     width: 100%;
     margin-bottom: 20px;
