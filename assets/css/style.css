@@ -1095,7 +1095,6 @@ details p {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px; 
-  height: 1000px;
 }
 
 .milling-header h2{
@@ -1117,9 +1116,7 @@ details p {
 .milling {
   display: flex;
   justify-content: space-between; 
-  align-items: flex-start; 
-  width: 900px;
-
+  align-items: flex-start;
 }
 
 .milling-first {
@@ -1127,54 +1124,20 @@ details p {
   margin-right: 20px; 
 }
 
-.milling1 {
-  width: 250px; 
-    padding-left: 10px; 
-    margin-left: 20px; 
-    margin-top: 145px; 
-    position: relative; 
-    top: -910px; 
-    right: -450px;
-}
-
-.milling-inner {
-  
-  padding: 10px;
-  text-align: right;
-}
 .milling h2 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px; 
   color: #343a40; 
-  text-align: left;
-  width: 387px;
-}
-
-.milling1 h2{
-  font-size: 24px; 
-  font-weight: 700; 
-  margin-bottom: 10px; 
-  color: #343a40; 
-  text-align: left;
-  width: 387px;
+  text-align: center;
 }
 
 .milling p {
   font-size: 15px; 
   line-height: 1.6; 
   margin-bottom: 15px; 
-  color: #495057; 
-  width: 387px;
-}
-
-.milling1 p{
-  font-size: 15px; 
-  line-height: 1.6; 
-  margin-bottom: 15px; 
-  color: #495057; 
-  width: 387px;
-  text-align: left;
+  color: #495057;
+  text-align: center; 
 }
 
 
