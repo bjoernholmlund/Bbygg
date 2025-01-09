@@ -799,7 +799,6 @@ details p {
   justify-content: space-between; /* Space between left and right columns */
   padding: 20px;                /* Padding around the container */
   align-items: flex-start;
-  height: 200px;
   width: 100%;
   font-size: 15px; 
   text-align: center;
@@ -849,10 +848,11 @@ details p {
 }
 
 /* Headings in the specialties */
-.contact-inner h2 {
-  font-size: 15px;             /* Font size for specialties heading */
+.container-contact h2 {
+  font-size: 30px;             /* Font size for specialties heading */
   font-weight: bold;           /* Make headings bold */
-  color: #000000;              /* Dark color for better readability */
+  color: #000000;            /* Dark color for better readability */
+  text-align: center;
 }
 
 .contact-inner h3{
@@ -866,6 +866,7 @@ details p {
   line-height: 1.5;            /* Spacing between lines */
   color: #495057;            /* Slightly lighter color for paragraphs */
   margin-top: 20px;
+  text-align: center;
 }
 
 /* Style for the contact section */

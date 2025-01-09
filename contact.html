@@ -11,52 +11,46 @@
 </head>
 <body>
     
-   <header>
-    
-     <!--Header-->
-     <section>
+     <!--Header/image-->
       <header>
         <div id="header">
           <div id="image-header">
             <a href="index.html"></a></div>
-
+        </div>          
+        
 
     <!--Menu List-->
-    <nav >
-      <ul id="menu">
-         <li><a href="index.html">Home</a></li>
-         <li><a href="services.html">Services</a>
-           <ul class="dropdown">
-            <li><a href="demolition.html">Demolition</a></li>
-            <li><a href="dismantling.html">Dismantling</a></li>
-            <li><a href="excavation.html">Excavation</a></li>
-            <li><a href="sheet-piling.html">Sheet piling</a></li>
-            <li><a href="milling.html">Milling</a></li>
-            <li><a href="transports.html">Transports</a></li>
-           </ul>
-         </li>
-         <li><a href="work-with-us.html">Work with us</a></li>
-         <li><a href="contact.html" class="active">Contact</a></li>
-              
-            </ul>
+    <nav>
+        <ul id="menu">
+           <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a>
+              <ul class="dropdown">
+               <li><a href="demolition.html">Demolition</a></li> 
+               <li><a href="dismantling.html">Dismantling</a></li>
+               <li><a href="excavation.html">Excavation</a></li> 
+               <li><a href="sheet-piling.html">Sheet piling</a></li>
+               <li><a href="milling.html">Milling</a></li>
+               <li><a href="transports.html">Transports</a></li> 
+              </ul>
+            </li> 
+            <li><a href="work-with-us.html" class="active">Work with us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+              </ul>
     </nav>
     </header>
-     
-    <section>
+    
       <div class="image-contact">
       </div>
-    </section>
-
-  <section>
-    <div class="container-contact">
-      <div class="contact">
-        <div id="cover-text-contact">
-        <h2>Feel free to contact us via the contact form for fast service</h2>
-       
-      </div>
-    </div>
       
-      <div class="contact1">
+    <section>
+      <div class="container-contact">
+        <div class="contact">
+          <div id="cover-text-contact">
+            <h2>Feel free to contact us via the contact form for fast service</h2>
+          </div>
+        </div>
+      </div>
+        <div class="contact1">
         <div class="contact-inner">
           <p>
             In the list below you will find contact persons in various areas. Feel free to contact us to get more 
@@ -64,27 +58,27 @@
             stage and are happy to provide prices so that you, as our client, can proceed in the tender process 
             with the work you need help with. We see your request as an opportunity and are grateful that you have given us your trust.
           </p>
-      
         </div>
-      </div> 
+        </div> 
+      </section>  
 
      <section class="contact-section">
       <h2>Contact Us</h2>
       <form class="contact-form" method="POST" action="https://formdump.codeinstitute.net/">
           
-          <!-- Namn -->
+          <!-- Name -->
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
   
-          <!-- E-post -->
+          <!-- E-mail -->
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
   
-          <!-- Telefon -->
+          <!-- Phone -->
           <label for="phone">Phone Number</label>
           <input type="tel" id="phone" name="phone" required>
   
-          <!-- Tjänster -->
+          <!-- Services -->
           <label for="service">Select Service</label>
           <div class="select-wrapper">
               <select id="service" name="service" required>
@@ -98,16 +92,14 @@
               </select>
           </div>
   
-          <!-- Meddelande -->
+          <!-- Message -->
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="4" required></textarea>
   
-          <!-- Skicka-knapp -->
+          <!-- Send button -->
           <input type="submit" class="submit-button" value="Send Message">
       </form>
   </section>
-
-     </section>
      
     <!--footer/social networks-->
     <footer>
@@ -128,14 +120,3 @@
     <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>   
 </body>
 </html>
-
-
-<div class="cover-text"></div>
-<div id="cover-text"></div>
-
-
-<nav>
-  <div class="hamburger" onclick="toggleMenu()">
-   <i class="fas fa-bars"></i>
- </div></nav>
-
