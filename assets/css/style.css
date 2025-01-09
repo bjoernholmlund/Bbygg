@@ -246,7 +246,6 @@ i.fa-solid.fa-arrow-down {
   color: #000; /* Change the color of the arrow if needed */
 }
 
-
 /*----------------DEMOLITION-STYLING!-----------------------------*/
 
 .demolition-image {
@@ -800,13 +799,18 @@ details p {
   justify-content: space-between; /* Space between left and right columns */
   padding: 20px;                /* Padding around the container */
   align-items: flex-start;
-  height: 400px;
+  height: 200px;
+  width: 100%;
+  font-size: 15px; 
+  text-align: center;
+  margin-left: -16px;  
 }
 
 /* Styles for the left column containing the main text */
 .contact {
   flex: 1;                      /* Take up available space */
   margin-right: 20px;          /* Space between the columns */
+  width: 100%;
 }
 
 /* Styles for the right column containing specialties */
@@ -816,18 +820,19 @@ details p {
 
 /* Cover text styles */
 #cover-text-contact {
-  margin-bottom: 20px;         /* Margin below the text */
+  margin-bottom: 20px; /* Margin below the text */
+  width: 100%;
+  text-align: center;
 }
 
 /* Headings in the cover text */
-#cover-text-contact h2 {
-  font-size: 35px;             /* Font size for headings */
-  font-weight: 700px;           /* Make headings bold */
-  margin-top: 30px;
+/*#cover-text-contact h3 {
+  font-size: 25px;             /* Font size for headings */
+  /*font-weight: 700px;          /* Make headings bold */
+  /*margin-top: 30px;
   text-align: left;
-  margin-left: 250px;
-  line-height: 1.5;
-}
+  line-height: 1.5; 
+} */ 
 
 /* Paragraph styles in the cover text */
 #cover-text-contact p {
@@ -987,12 +992,27 @@ details p {
 
 .work-whit-us-under-header{
   width: 100%;
-  height: 250px;
+  height: 200px;
   text-align: center;
   font-size: 15px;
   line-height: 50px;
   background-color: #f0f0f0;
 }
+
+.work-with-us1{
+  padding: 10px;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+#work-with-us-inner p{
+  font-size: 16px;             /* Font size for paragraphs */
+  line-height: 2;            /* Spacing between lines */
+  color: #000000;      
+}
+
+
 
 /*Style for the form section */
 .form-section {
