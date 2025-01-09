@@ -601,8 +601,7 @@ details p {
   display: flex; /* Use flexbox to align items */
   justify-content: flex-start; /* Space between items *//*space-between*/
   align-items: flex-start; /* Align items at the top */
-  width: 360px;
-  text-align: left;
+  text-align: center;
 }
 
 .excavation-first {
@@ -612,45 +611,22 @@ details p {
 
 }
 
-.excavation1 {
-  width: 250px; /* Fixed width for the second column */
-  padding-left: 10px; /* Optional padding for better spacing */
-  margin-left: 20px; /* Space between the two sections */
-  margin-top: 145px; /* Adjust this to move it higher */
-  position: relative; /* For positioning */
-  top: -755px; /* Move it up by this value; adjust as needed */
-  right: -450px;
-}
-
-.excavation1-inner {
-  background-color: #f1f1f1; /* Optional: add a background color */
-  /*padding: 10px; /* Add some padding inside the inner div */
-  text-align: right; /* Align text to the right */
-}
 .excavation h2 {
   font-size: 24px; /* Size of headings */
   font-weight: 700; /* Bold headings */
   margin-bottom: 10px; /* Space below headings */
   color: #343a40; /* Darker color for headings */
-  text-align: left;
-  width: 360px;
+  text-align: center;
+  width: 100%;
 }
 
-.excavation1 h2{
-  font-size: 24px; /* Size of headings */
-  font-weight: 700; /* Bold headings */
-  margin-bottom: 10px; /* Space below headings */
-  color: #343a40; /* Darker color for headings */
-  text-align: left;
-  width: 360px;
-}
 
-.excavation p, .excavation1 p {
+.excavation p {
   font-size: 12px; /* Font size for paragraphs */
   line-height: 1.6; /* Better readability */
   margin-bottom: 15px; /* Space between paragraphs */
   color: #495057; /* Slightly lighter color for text */
-  width: 387px;
+  text-align: center;
 }
 
 
@@ -673,11 +649,9 @@ details p {
 }
 
 .container-excavation {
-  
-  max-width: 900px; /* Limit max width for better readability */
   margin: 0 auto; /* Center the container */
   padding: 20px; /* Add padding around the container */
-  height: 750px;
+  width: 100%;
 }
 
 /*---------SHEET-PILLING-STYLING!-------------*/
