@@ -214,7 +214,7 @@ video {
 text-align: center;
 font-size: 30px;
 width: 100%;
-height: 400px;
+/*height: 450px;*/
 }
 
 /*services that we provides with header*/
@@ -698,8 +698,8 @@ details p {
   justify-content: space-between; /* Space between left and right columns */
   padding: 20px;                /* Padding around the container */
   align-items: flex-start;
-  height: 400px;
   width: 100%;
+  text-align: center;
 }
 
 /* Styles for the left column containing the main text */
@@ -716,7 +716,6 @@ details p {
 /* Cover text styles */
 #cover-text-sheet-piling {
   margin-bottom: 20px;         /* Margin below the text */
-  margin-top: 70px;
 }
 
 /* Headings in the cover text */
@@ -735,7 +734,6 @@ details p {
   line-height: 1.5;
   color: #495057;
   margin-top: 20px;
-  margin-left: 100px;
 }
 
 /* Styles for the specialties section */
@@ -1267,7 +1265,7 @@ img {
 }
 
 .box p {
-  text-align: left;
+  text-align: center;
   margin-top: 10px;
 }
 
