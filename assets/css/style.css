@@ -594,37 +594,38 @@ details p {
 .excavation-header p{
   text-align: center;
   font-weight: 500;
-  text-align: center;
   letter-spacing: 1px;
   margin-top: 50px;
 }
 
 .excavation {
   display: flex; /* Use flexbox to align items */
-  justify-content: space-between; /* Space between items */
+  justify-content: flex-start; /* Space between items *//*space-between*/
   align-items: flex-start; /* Align items at the top */
-  width: 870px;
-
+  width: 360px;
+  text-align: left;
 }
 
 .excavation-first {
   flex: 1; /* Allow this div to take available space */
-  margin-right: 20px; /* Space between the two columns */
+  /*margin-right: 20px; /* Space between the two columns */
+  width: 360px;
+
 }
 
 .excavation1 {
   width: 250px; /* Fixed width for the second column */
-    padding-left: 10px; /* Optional padding for better spacing */
-    margin-left: 20px; /* Space between the two sections */
-    margin-top: 145px; /* Adjust this to move it higher */
-    position: relative; /* For positioning */
-    top: -755px; /* Move it up by this value; adjust as needed */
-    right: -450px;
+  padding-left: 10px; /* Optional padding for better spacing */
+  margin-left: 20px; /* Space between the two sections */
+  margin-top: 145px; /* Adjust this to move it higher */
+  position: relative; /* For positioning */
+  top: -755px; /* Move it up by this value; adjust as needed */
+  right: -450px;
 }
 
 .excavation1-inner {
   background-color: #f1f1f1; /* Optional: add a background color */
-  padding: 10px; /* Add some padding inside the inner div */
+  /*padding: 10px; /* Add some padding inside the inner div */
   text-align: right; /* Align text to the right */
 }
 .excavation h2 {
@@ -633,7 +634,7 @@ details p {
   margin-bottom: 10px; /* Space below headings */
   color: #343a40; /* Darker color for headings */
   text-align: left;
-  width: 387px;
+  width: 360px;
 }
 
 .excavation1 h2{
@@ -642,11 +643,11 @@ details p {
   margin-bottom: 10px; /* Space below headings */
   color: #343a40; /* Darker color for headings */
   text-align: left;
-  width: 387px;
+  width: 360px;
 }
 
 .excavation p, .excavation1 p {
-  font-size: 15px; /* Font size for paragraphs */
+  font-size: 12px; /* Font size for paragraphs */
   line-height: 1.6; /* Better readability */
   margin-bottom: 15px; /* Space between paragraphs */
   color: #495057; /* Slightly lighter color for text */
@@ -673,6 +674,7 @@ details p {
 }
 
 .container-excavation {
+  
   max-width: 900px; /* Limit max width for better readability */
   margin: 0 auto; /* Center the container */
   padding: 20px; /* Add padding around the container */
