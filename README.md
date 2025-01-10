@@ -3,6 +3,8 @@
 Welcome to Holmlund Contracting!
 Thank you for visiting my project. 
 
+![Site Screenshot showing responsiveness across devices](assets/images/mockup.png)
+
 Link to Live site https://github.com/bjoernholmlund/Bbygg.git
 
 
