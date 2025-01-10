@@ -20,14 +20,14 @@ Live Demo
  ![menulist](assets/images/readme.menulist.png)
 
  - **Information**
- 
+    Some information on every site you visit.
+
  ![information](assets/images/readme.information.png)
  
 
 ## 🌟 Functions  
 - **Responsive design:** Adapts to all screen sizes.  
-- **Easy Navigation:** Intuitive interface for efficient use.  
-- **Fast loading times:** Optimized for performance.
+- **Easy Navigation:** Intuitive interface for efficient use.
 
 
 ## 🚀 Get started  
