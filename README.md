@@ -11,11 +11,17 @@ Live Demo
 ## Features
 
 ## Existing Features
- - **Home button:** ![homebutton](assets/images/Readme.%20home%20button.png)
+ - **Home button:** 
+ 
+ ![homebutton](assets/images/Readme.%20home%20button.png)
 
- - **Menulist:** ![menulist](assets/images/readme.menulist.png)
+ - **Menulist:** 
+ 
+ ![menulist](assets/images/readme.menulist.png)
 
- - **Information**![information](assets/images/readme.information.png)
+ - **Information**
+ 
+ ![information](assets/images/readme.information.png)
  
 
 ## 🌟 Functions  
