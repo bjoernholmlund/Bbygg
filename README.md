@@ -13,9 +13,10 @@ Live Demo
 ## Existing Features
  - **Home button:** ![homebutton](assets/images/Readme.%20home%20button.png)
 
- - **Header:**
+ - **Menulist:** ![menulist](assets/images/readme.menulist.png)
 
-
+ - **Information**![information](assets/images/readme.information.png)
+ 
 
 ## 🌟 Functions  
 - **Responsive design:** Adapts to all screen sizes.  
