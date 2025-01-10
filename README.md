@@ -11,7 +11,7 @@ Live Demo
 ## Features
 
 ## Existing Features
- - **Home button:** ![homebutton](assets/images/Holmlund contracting.png)
+ - **Home button:** ![homebutton](assets/images/Readme.%20home%20button.png)
 
  - **Header:**
 
