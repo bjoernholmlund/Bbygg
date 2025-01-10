@@ -190,35 +190,13 @@ ul li ul.dropdown li:hover a {
   background: url('../images/Home-page.jpg') no-repeat center center;
   background-size: cover; /* Ensures the image covers the container without distortion */
   width: 100%;
-  height: 300px; /* Adjusts the height to make the image larger */
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: flex-start;
 }
 
-video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-}
-
-.inner {
-  text-align: center;
-}
 
 /*first part under the video*/
 .block-section-text-center{
@@ -1165,7 +1143,7 @@ Not done yet :/
 }
 
 .box, .box1, .box2, .box3, .box4, .box5 {
-  width: calc(33.333% - 16px); 
+  width: calc(33.333% - 16px);
   text-align: center;
 }
 
