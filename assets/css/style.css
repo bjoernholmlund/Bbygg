@@ -252,7 +252,7 @@ i.fa-solid.fa-arrow-down {
   background: url('../images/demolition-139976_1280.jpg') no-repeat center center;
   background-size: cover; /* Ensures the image covers the container without distortion */
   width: 100%;
-  height: 500px; /* Adjusts the height to make the image larger */
+  height: 300px; /* Adjusts the height to make the image larger */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -396,7 +396,7 @@ details p {
   background: url('../images/dismantling1-2159352_1280.jpg') no-repeat center center;
   background-size: cover; /* Ensures the image covers the container without distortion */
   width: 100%;
-  height: 500px; /* Adjusts the height to make the image larger */
+  height: 300px; /* Adjusts the height to make the image larger */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -507,7 +507,7 @@ details p {
   background: url('../images/our-services-51666_1280.jpg') no-repeat center center;
   background-size: cover; /* Ensures the image covers the container without distortion */
   width: 100%;
-  height: 500px; /* Adjusts the height to make the image larger */
+  height: 300px; /* Adjusts the height to make the image larger */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -575,7 +575,7 @@ details p {
   background: url('../images/excavation-3088700_1280.jpg') no-repeat center center;
   background-size: cover; /* Ensures the image covers the container without distortion */
   width: 100%;
-  height: 500px; /* Adjusts the height to make the image larger */
+  height: 300px; /* Adjusts the height to make the image larger */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -660,7 +660,7 @@ details p {
   background: url('../images/beam-4920150_1280.jpg') no-repeat center center;
   background-size: cover; /* Ensures the image covers the container without distortion */
   width: 100%;
-  height: 500px; /* Adjusts the height to make the image larger */
+  height: 300px; /* Adjusts the height to make the image larger */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -695,7 +695,6 @@ details p {
 /* Headings in the cover text */
 #cover-text-sheet-piling h2 {
   font-size: 35px;             /* Font size for headings */
-  font-weight: 700px;           /* Make headings bold */
   margin-top: 30px;
   text-align: left;
   margin-left: 150px;
@@ -720,7 +719,6 @@ details p {
 /* Headings in the specialties */
 .sheet-piling-inner h2 {
   font-size: 35px;             /* Font size for headings */
-  font-weight: 700px;           /* Make headings bold */
   margin-top: 30px;
   text-align: left;
   margin-left: 250px;
@@ -759,7 +757,7 @@ details p {
   background: url('../images/contact-2860030_1280.jpg') no-repeat center center;
   background-size: cover; /* Ensures the image covers the container without distortion */
   width: 100%;
-  height: 450px; /* Adjusts the height to make the image larger */
+  height: 300px; /* Adjusts the height to make the image larger */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -795,15 +793,6 @@ details p {
   width: 100%;
   text-align: center;
 }
-
-/* Headings in the cover text */
-/*#cover-text-contact h3 {
-  font-size: 25px;             /* Font size for headings */
-  /*font-weight: 700px;          /* Make headings bold */
-  /*margin-top: 30px;
-  text-align: left;
-  line-height: 1.5; 
-} */ 
 
 /* Paragraph styles in the cover text */
 #cover-text-contact p {
@@ -955,7 +944,7 @@ details p {
   background: url('../images/handshake-4002834_1280.jpg') no-repeat center center;
   background-size: cover; 
   width: 100%;
-  height: 450px; 
+  height: 300px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1084,7 +1073,7 @@ details p {
   background: url('../images/asphalt1-2580494_1280.jpg') no-repeat center center;
   background-size: cover; 
   width: 100%;
-  height: 450px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1177,13 +1166,6 @@ Not done yet :/
   width: calc(33.333% - 16px); 
   text-align: center;
 }
-/*
-.box, .box1, .box2, .box3, .box4, .box5 {
-  margin: auto 1px;
-  width: 250px;
-  height: 250px;
-  display: block; 
-}*/
 
 img {
   width: 100%;
