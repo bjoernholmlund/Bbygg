@@ -186,6 +186,17 @@ ul li ul.dropdown li:hover a {
 
 /*-----Video on the homepage-----*/
 
+.Home-page {
+  background: url('../images/Home-page.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the container without distortion */
+  width: 100%;
+  height: 300px; /* Adjusts the height to make the image larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 video {
   width: 100%;
   height: auto;
@@ -1144,15 +1155,6 @@ Not done yet :/
   margin: 0 auto; 
   grid-gap: 50px; 
 }
-/*
-#cover {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-gap: 50px; 
-  width: fit-content; 
-  margin: 0 auto; 
-  padding: 20px;
-} */
 
 #cover-text {
   background-color: #f0f0f0;
