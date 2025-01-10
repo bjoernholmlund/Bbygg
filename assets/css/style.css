@@ -249,7 +249,7 @@ i.fa-solid.fa-arrow-down {
 }
 
 .demolition-header{
-  height: 250px;
+  height: 100px;
   text-align: center;
   margin-top: 100px;
   font-size: 20px;
@@ -425,6 +425,7 @@ details p {
   font-weight: 700; /* Bold headings */
   margin-bottom: 10px; /* Space below headings */
   color: #343a40; /* Darker color for headings */
+  text-align: center;
 }
 
 /* Paragraph styles in the cover text */
@@ -433,6 +434,7 @@ details p {
   line-height: 1.6; /* Better readability */
   margin-bottom: 15px; /* Space between paragraphs */
   color: #495057; /* Slightly lighter color for text */
+  text-align: center;
 }
 
 /* Styles for the specialties section */
