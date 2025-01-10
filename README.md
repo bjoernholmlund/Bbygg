@@ -5,7 +5,15 @@ Thank you for visiting my project.
 
 ![Site Screenshot showing responsiveness across devices](assets/images/mockup.png)
 
-Link to Live site https://github.com/bjoernholmlund/Bbygg.git
+Live Demo
+ https://github.com/bjoernholmlund/Bbygg.git
+
+## Features
+
+## Existing Features
+ **Home button:** (assets/images/Holmlund contracting.png)
+ **Header:**
+
 
 
 ## 🌟 Functions  
@@ -13,23 +21,35 @@ Link to Live site https://github.com/bjoernholmlund/Bbygg.git
 - **Easy Navigation:** Intuitive interface for efficient use.  
 - **Fast loading times:** Optimized for performance.
 
-## ⚙️ Teknologier som används  
-- **HTML**  
-- **CSS**  
-- [Add more technologies if applicable, e.g. JavaScript if it is a scheduled part.] 
 
 ## 🚀 Get started  
 Follow the steps below to run the project locally: 
 
-Overview
+## Overview
 This site is designed to showcase our expertise and commitment to delivering 
 top-quality construction and contracting services. Explore our features and learn more 
 about how we strive to provide innovative and user-friendly solutions for every project.
+## ⚙️ Technologies used
+- **HTML**  
+- **CSS**  
 
-Features
 
 Testing
 
+Manual Testing
+What will be tested 
+ 
+HTML No errors were returned when passing through the official W3C validator. The results for the individual HTML files are below.
+- index.html
+- service.html
+- demolition.html
+- dismantling.html
+- excavation.html
+- milling.html
+- sheet-piling.html
+- work-with-us.html
+
+CSS No errors were returned when passing through the official W3C (Jigsaw) validator.
 Deployment
 
 Credits
