@@ -13,7 +13,7 @@ Live Demo
 ## Features
 
 ## Existing Features
- - **Home button:** 
+ - **Home button/Logo:** 
  
  ![homebutton](assets/images/Readme.%20home%20button.png)
 
@@ -22,9 +22,13 @@ Live Demo
  ![menulist](assets/images/readme.menulist.png)
 
  - **Information**
-    Some information on every site you visit.
+   Some information on every site you visit.
 
  ![information](assets/images/readme.information.png)
+
+ - **Footer**
+   
+ ![Form](assets/images/Contact%20form.png)   
  
 
 ## Overview
@@ -39,6 +43,8 @@ about how we strive to provide innovative and user-friendly solutions for every 
 
 
 ## Testing
+
+
    - Cross-Browser Testing: I tested the game across multiple web browsers, including Firefox, Chrome, Opera, and Safari. The game functioned as expected on each, with no issues in game logic, visuals, or interactivity.
 
    - I have verified that this project is fully responsive, visually appealing, and functions correctly across all standard screen sizes using the DevTools device toolbar.
@@ -70,9 +76,6 @@ Bug: Layout Issues on Smaller Screens
 
 + **Accessibility**
    - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools. 
-
-
-
 
 
 ## Deployment
