@@ -7,9 +7,9 @@ Below are the key features of the website:
 
 ![Site Screenshot showing responsiveness across devices](assets/images/mockup.png)
 
-Live Demo
+## Live Demo
  
- <a href=" https://bjoernholmlund.github.io/Bbygg/">
+**Page** <a href=" https://bjoernholmlund.github.io/Bbygg/">
 
 ## Features
 
