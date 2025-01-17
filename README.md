@@ -32,7 +32,7 @@ Live Demo
  
  - **Form**
  
- ![form](assets/images/Contact%20form.png)   
+ ![form](assets/images/Contact%20form.png)![form](assets/images/form1.png)   
  
 
 ## ⚙️ Technologies used
