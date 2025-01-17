@@ -8,7 +8,8 @@ Below are the key features of the website:
 ![Site Screenshot showing responsiveness across devices](assets/images/mockup.png)
 
 Live Demo
- https://github.com/bjoernholmlund/Bbygg.git
+ 
+ <a href=" https://bjoernholmlund.github.io/Bbygg/">
 
 ## Features
 
@@ -52,7 +53,9 @@ Live Demo
    - I have confirmed that both forms works properly, requires entries in every field, will only accept an email in the email field, and the submit button works. 
 
 
-**Bug**: Layout Issues on Smaller Screens
+**Bug** 
+
+Layout Issues on Smaller Screens
 
 - Description: 
    On smaller screens, the layout became distorted with text overlapping images and sections exceeding the viewport, making navigation and readability difficult.
