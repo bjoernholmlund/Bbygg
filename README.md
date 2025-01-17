@@ -52,7 +52,7 @@ Live Demo
    - I have confirmed that both forms works properly, requires entries in every field, will only accept an email in the email field, and the submit button works. 
 
 
-Bug: Layout Issues on Smaller Screens
+**Bug**: Layout Issues on Smaller Screens
 
 - Description: 
    On smaller screens, the layout became distorted with text overlapping images and sections exceeding the viewport, making navigation and readability difficult.
@@ -66,6 +66,8 @@ Bug: Layout Issues on Smaller Screens
 - Cause:
    The CSS lacked responsive breakpoints, and certain elements had fixed widths or margins that didn’t adjust for different screen sizes.
  
+## Validator Testing 
+
 * **HTML** 
    - No errors were returned when passing through the official W3C validator.
 
@@ -92,4 +94,4 @@ Content
 Media
    
    - Pixabay Images: Several images used on this website are sourced from Pixabay, a platform that provides high-quality, royalty-free images.
-   - Private Images: Additionally, the website features private photographs taken personally
+   - Private Images: Additionally, the website features private photographs taken personally.
