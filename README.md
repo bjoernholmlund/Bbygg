@@ -12,7 +12,6 @@ Live Demo
 
 ## Features
 
-## Existing Features
  - **Home button/Logo:** 
  
  ![homebutton](assets/images/Readme.%20home%20button.png)
@@ -22,21 +21,19 @@ Live Demo
  ![menulist](assets/images/readme.menulist.png)
 
  - **Information**
+ 
    Some information on every site you visit.
 
  ![information](assets/images/readme.information.png)
 
  - **Footer**
+ 
  ![footer](assets/images/Footer.png)
+ 
  - **Form**
+ 
  ![form](assets/images/Contact%20form.png)   
  
-
-## Overview
-This site is designed to showcase our expertise and commitment to delivering 
-top-quality construction and contracting services. Explore our features and learn more 
-about how we strive to provide innovative and user-friendly solutions for every project.
-
 
 ## ⚙️ Technologies used
 - **HTML**  
