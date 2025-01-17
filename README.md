@@ -54,7 +54,7 @@ Below are the key features of the website:
    - I have confirmed that both forms works properly, requires entries in every field, will only accept an email in the email field, and the submit button works. 
 
 
-**Bug** 
+## Bug
 
 Layout Issues on Smaller Screens
 
@@ -98,5 +98,5 @@ Content
 
 Media
    
-   - Pixabay Images: Several images used on this website are sourced from Pixabay, a platform that provides high-quality, royalty-free images.
+   - Pixabay Images: Several images used on this website are sourced from [Pixabay](https://pixabay.com/), a platform that provides high-quality, royalty-free images.
    - Private Images: Additionally, the website features private photographs taken personally.
