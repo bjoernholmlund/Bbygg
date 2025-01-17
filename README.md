@@ -77,7 +77,7 @@ Live Demo
 + **Accessibility**
    - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools. 
 
-![lighthouse](assets/images/Readme.png)
+![lighthouse](assets/images/Readme%20pic.png)
 
 ## Deployment
 
