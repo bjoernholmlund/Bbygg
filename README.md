@@ -9,7 +9,7 @@ Below are the key features of the website:
 
 ## Live Demo
  
-**Page** <a href="https://bjoernholmlund.github.io/Bbygg/">home</a>
+<a href="https://bjoernholmlund.github.io/Bbygg/">Page</a>
 
 
 ## Features
