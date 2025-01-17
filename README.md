@@ -27,8 +27,9 @@ Live Demo
  ![information](assets/images/readme.information.png)
 
  - **Footer**
-   
- ![Form](assets/images/Contact%20form.png)   
+ ![footer](assets/images/Footer.png)
+ - **Form**
+ ![form](assets/images/Contact%20form.png)   
  
 
 ## Overview
